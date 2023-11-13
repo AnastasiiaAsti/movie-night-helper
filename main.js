@@ -86,3 +86,19 @@ function init() {
 //  Main function
 
 console.log(movieIdeas);
+
+const btnEl = document.getElementById('btn');
+const result = document.getElementById('result')
+
+btnEl.addEventListener('click', generateIdea) 
+
+function generateIdea(){
+    const randomIndex = Math.floor(Math.random() * movieIdeas.length);
+    const randomIdea = movieIdeas[randomIndex];
+    
+    result.innerHTML = `
+    <p>Movie: <strong>${randomIdea.movie}</strong></p>
+    <p>Food: <strong>${randomIdea.food}</strong></p>
+    <p>Cocktail: <strong>${randomIdea.cocktail}</strong></p>
+    `;
+}
