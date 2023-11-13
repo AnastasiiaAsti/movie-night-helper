@@ -8,14 +8,65 @@ body {
 .container {
     position: absolute;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 50vh;
-    width: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 12px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    width: 50vw;
 }
 
-.container button {
+.grid-item {
+    height: 50px;
+    border: 2px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: grey;
+    margin: 1%;
 }
+
+.item1 { 
+    width: 14%;
+ }
+.item2 { 
+    width: 40%; 
+}
+.item3 { 
+    width: 40%;
+ }
+.item4 { 
+    width: 20%;
+ }
+.item5 { 
+    width: 76%;
+ }
+.item6 { 
+    width: 85%; 
+ }
+.item7 { 
+    width: 11%; 
+ }
+.item8 { 
+    width: 26%;
+}
+.item9 { 
+    width: 70%;
+ }
+.item10 { 
+    width: 24%;
+ }
+.item11 { 
+    width: 50%; 
+ }
+.item12 { 
+    width: 20%; 
+}
+.item13 { 
+    width: 87%;
+ }
+.item14 { 
+    width: 9%;
+ }
