@@ -91,6 +91,7 @@ const btnEl = document.getElementById('btn');
 const movieEl = document.getElementById('movie')
 const dishEl = document.getElementById('dish')
 const cocktailEl = document.getElementById('cocktail')
+const arrows = document.querySelectorAll('.hidden')
 
 
 btnEl.addEventListener('click', generateIdea) 
