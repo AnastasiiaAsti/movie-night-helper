@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import movieIdeas from './data'
 
 // Background animation
 
@@ -84,3 +85,4 @@ function init() {
 
 //  Main function
 
+console.log(movieIdeas);
