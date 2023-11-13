@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 body {
     margin: 0;
     display: flex;
@@ -17,7 +18,7 @@ body {
 }
 
 .grid-item {
-    height: 50px;
+    min-height: 50px;
     border: 2px solid;
     border-radius: 20px;
     box-sizing: border-box;
@@ -44,10 +45,7 @@ body {
     width: 76%;
  }
 .item6 { 
-    width: 85%; 
- }
-.item7 { 
-    width: 11%; 
+    width: 100%; 
  }
 .item8 { 
     width: 26%;
@@ -70,3 +68,39 @@ body {
 .item14 { 
     width: 9%;
  }
+
+
+ .neon{
+    font-size: 25px;
+    animation: flicker 3s linear infinite;
+    font-family: 'Tilt Neon', sans-serif;
+    color: #FFD5FF;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+ }
+
+ .neon-blue{
+    font-size: 25px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: #3ec3ff;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #3ec3ff, 2px 0px 4px #3ec3ff, 3px 0px 4px #3ec3ff, 2px 0px 3px #2a8bc9, 2px 3px 15px #2a8bc9, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #2a8bc9, 40px 0vw 200px #2a8bc9;
+ }
+
+ .neon-green{
+    font-size: 25px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: #9ad942;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #9ad942, 2px 0px 4px #9ad942, 3px 0px 4px #9ad942, 2px 0px 3px #6e9931, 2px 3px 15px #6e9931, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #6e9931, 40px 0vw 200px #6e9931;
+ }
+
+ @keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}

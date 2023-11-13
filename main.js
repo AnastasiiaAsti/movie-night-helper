@@ -99,7 +99,11 @@ function generateIdea(){
     const randomIndex = Math.floor(Math.random() * movieIdeas.length);
     const randomIdea = movieIdeas[randomIndex];
     
-    movieEl.innerHTML = `<strong>${randomIdea.movie}</strong>`
-    dishEl.innerHTML = `<strong>${randomIdea.food}</strong>`
-    cocktailEl.innerHTML = `<strong>${randomIdea.cocktail}</strong>`;
+    movieEl.innerText = `${randomIdea.movie}`
+    movieEl.className='neon'
+    dishEl.innerText = `${randomIdea.food}`
+    dishEl.className='neon-blue'
+    cocktailEl.innerText = `${randomIdea.cocktail}`;
+    cocktailEl.className='neon-green';
 }
+
